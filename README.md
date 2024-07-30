@@ -38,7 +38,7 @@ npm run start-vue3-host
 ```
 
 ## Vite Plugin Limitations
-- During my tests, i noticed that, when creating the react component, if i were to use any of the react native hooks such as "useState", "useRef" etc, the host application would throw the following error:
+During my tests, i noticed that, when creating the react component, if i were to use any of the react native hooks such as "useState", "useRef" etc, the host application would throw the following error:
 ```
 React TypeError: Cannot read properties of null (reading 'useState')
 ```
