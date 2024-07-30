@@ -14,6 +14,10 @@
 ```shell
 git clone https://github.com/pedrolopes-ilv/react-vue-module-federation
 ```
+- Install base dependencies
+```shell
+npm install
+```
 - Install all projects dependencies with setup script
 ```shell
 npm run setup

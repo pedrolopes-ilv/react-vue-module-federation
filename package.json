@@ -2,14 +2,21 @@
   "name": "react-vue-module-federation",
   "version": "1.0.0",
   "description": "Project created to validate the vite module federation plugin in order to consume react componentes inside vue applications",
-  "main": "index.js",
   "scripts": {
     "install:react-remote": "cd react-remote-app && npm install && npm run build && npm pack && cd ..",
     "install:vue2": "cd vue2-host-app && npm install && npm install ../react-remote-app/react-remote-app-0.0.0.tgz && cd ..",
     "install:vue3": "cd vue-host-app && npm install && npm install ../react-remote-app/react-remote-app-0.0.0.tgz && cd ..",
     "install:react-host": "cd react-host-app && npm install && npm install ../react-remote-app/react-remote-app-0.0.0.tgz && cd ..",
-    "setup": "npm run install:react-remote && npm run install:vue2 && npm run install:vue3 && npm run install:react-host"
+    "start-react-host": "cd react-host-app && npm run dev",
+    "start-vue2-host": "cd vue2-host-app && npm run dev",
+    "start-vue3-host": "cd vue-host-app && npm run dev",
+    "start-hosts": "concurrently --kill-others \"npm run start-react-host\" \"npm run start-vue2-host\" \"npm run start-vue3-host\"",
+    "setup": "npm run install:react-remote && npm run install:vue2 && npm run install:vue3 && npm run install:react-host",
+    "postsetup": "npm run start-hosts"
   },
   "author": "pedrolopes-ilv",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }

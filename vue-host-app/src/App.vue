@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { applyReactInVue, applyPureReactInVue } from 'veaury'
-import ReactButton from "reactApp/Button";
-const Basic = applyReactInVue(ReactButton);
-const BasicPure = applyPureReactInVue(ReactButton);
+import { applyPureReactInVue } from 'veaury'
+import ReactComponent from "reactApp/Button";
+const ReactButton = applyPureReactInVue(ReactComponent);
 
 </script>
 
 <template>
   <div class="vue-react">
     <h1>Vue + React + Vuery</h1>
-    <Basic></Basic>
-    <BasicPure></BasicPure>
+    <ReactButton></ReactButton>
   </div>
 </template>
 

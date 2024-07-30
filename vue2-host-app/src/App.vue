@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { applyReactInVue } from 'vuereact-combined';
-import ReactButton from "reactApp/Button";
-const Basic = applyReactInVue(ReactButton);
+import ReactComponent from "reactApp/Button";
+const ReactButton = applyReactInVue(ReactComponent);
 </script>
 
 <template>
   <div id="app">
     <div class="vue-react">
       <h1>Vue 2 + React + VueReactCombined</h1>
-      <Basic></Basic>
+      <ReactButton></ReactButton>
     </div>
   </div>
 </template>
