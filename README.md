@@ -1,4 +1,4 @@
-# Module Federation With Vite + Vue And React (With Vue 2 Support)
+# Module Federation With Vite + Vue And React (With Vue 3 and Vue 2 Support)
 
 ## Requiriments
 - NodeJS V20.16.0
