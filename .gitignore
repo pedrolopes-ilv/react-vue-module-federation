@@ -1,2 +1,7 @@
 node_modules/
 react-remote-app/react-remote-app-0.0.0.tgz
+package-lock.json
+react-remote-app/package-lock.json
+react-host-app/package-lock.json
+vue-host-app/package-lock.json
+vue2-host-app/package-lock.json
