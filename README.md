@@ -49,7 +49,7 @@ The issue mentioned above has been open since 2022 and mentions that when publis
 
 ## Mounting React Components Inside a Vue Application (Vue 3)
 
-After searching around for solutions for mounting react components inside Vuejs, i stumbled upon "Vuery", a community maintained library that handles the my scenario perfectly.
+After searching around for solutions for mounting react components inside Vuejs, i stumbled upon "Vuery", a community maintained library that handles my scenario perfectly.
 
 In order the mount a React component with Vuery, all you need to do is configure your vite.config.js, following their documentation, and import the component as follow:
 ```vue
