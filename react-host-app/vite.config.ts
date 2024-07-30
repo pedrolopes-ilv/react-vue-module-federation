@@ -11,7 +11,7 @@ export default defineConfig({
       remotes: {
         reactApp: "./node_modules/react-remote-app/dist/assets/reactButton.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "zustand"],
     }),
   ],
 });
