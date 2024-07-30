@@ -1,7 +1,7 @@
 {
   "name": "react-vue-module-federation",
   "version": "1.0.0",
-  "description": "Project created to validate the vite module federation plugin in order to consume react componentes inside vue applications",
+  "description": "Project created to validate the vite module federation plugin in order to consume react components inside vue applications",
   "scripts": {
     "install:react-remote": "cd react-remote-app && npm install && npm run build && npm pack && cd ..",
     "install:vue2": "cd vue2-host-app && npm install && npm install ../react-remote-app/react-remote-app-0.0.0.tgz && cd ..",
